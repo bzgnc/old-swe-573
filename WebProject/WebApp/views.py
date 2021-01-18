@@ -3,10 +3,6 @@ import sys
 from itertools import islice
 from time import sleep
 
-import pandas as pd
-from tqdm import tqdm
-import GetOldTweets3 as got
-
 # from GetOldTweets3 import models
 from django.contrib.auth import get_user_model
 from django.http import JsonResponse
