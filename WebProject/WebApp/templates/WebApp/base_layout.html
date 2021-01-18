@@ -1,0 +1,29 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Social Media Trend Analyzer</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <header class="wrapper">
+        <h1><a href="{% url 'WebApp:home' %}" alt="WebApp"></a></h1>
+        <nav>
+            <ul>
+                <li>
+                    <form class="logout-link" action="{% url 'accounts:logout' %}" method="post">
+                        {% csrf_token %}
+                        <button type="submit">Logout</button>
+                    </form>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="wrapper">
+       {% block content %}
+       {% endblock %}
+    </div>
+</body>
+</html>
