@@ -6,23 +6,33 @@ Student: Ulaş Can İnan 2019719087 <br>
 Instructor: Suzan Üsküdarlı
 
 
+### install requirements package
+```shell
+pip install -r req.txt
+```
+### install virtualenv
+```shell
+
+pip install virtualenv
+```
+
 ### create virtual env
 ````shell
 virtualenv venv
 ````
 
 ### activate virtualenv
-```sh
+```shell
 .\venv\Scripts\activate.bat
-```
-
-### install requirmenst package
-```
-pip install -r req.txt 
 ```
 
 ### start working
 ```shell
 cd WebbProject
 python manage.py runserver 
+```
+
+### update requirements
+```shell
+pip freeze > req.txt
 ```
