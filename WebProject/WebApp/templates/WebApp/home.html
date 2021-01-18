@@ -3,11 +3,11 @@
 {% block content %}
 <h1>Welcome to  Trend Analyzer</h1>
  <!-- SUBREDDIT FORM -->
-            <form class="uk-margin-medium-top animate uk-invisible" data-uk-margin data-uk-scrollspy-class="uk-animation-fade uk-invisible" method="GET" action="/analyze_sentiment/">
-                <div class="uk-margin">
+            <form method="GET" action="/analyze_sentiment/">
+                <div>
                     {{subreddit_form.as_p}}
                 </div>
-                <button type="submit" class="uk-button uk-button-default uk-button-large uk-width-2-3 uk-width-auto@s" data-uk-icon="arrow-right">Analyze</button>
+                <button type="submit">Analyze</button>
             </form>
             <!-- SUBREDDIT FORM -->
 <p>Under Construction</p>

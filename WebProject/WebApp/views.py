@@ -29,9 +29,11 @@ User = get_user_model()
 def homepage(request):
     return render(request, 'WebApp/home.html')
 
+
 def index(request):
     subreddit_form = SubredditForm()
-    return render(request, 'WebApp/home.html', {'subreddit_form' : subreddit_form})
+    return render(request, 'WebApp/home.html', {'subreddit_form': subreddit_form})
+
 
 def about(request):
     return render(request, 'WebApp/about.html')
